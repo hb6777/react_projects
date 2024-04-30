@@ -1,0 +1,50 @@
+ .parentmodal-container{ 
+    font-size: 20px; 
+    border:0px solid blue;
+ }
+ 
+ .modal{
+    background-color: aqua ; 
+    position: fixed;
+    width:100%;
+    height:100%;
+    overflow: auto;
+    padding-top: 150px;
+    top:0; 
+ }
+
+ .modal-container{  
+    border:0px solid red;    
+    width:50%;    
+    position: relative;
+    top:0;
+    left:350px; 
+    background-color: rgb(125, 245, 125);
+ }
+ 
+ .modal-header{ 
+    border:0px solid green;   
+    height:40px; 
+    color: white;
+    font-weight: bold;
+    padding-top: 18px;
+ }
+
+ .closeicon-container{
+    float:right; 
+ }
+ 
+ .modal-body{ 
+    background-color: rgb(240, 240, 78);
+    height:60px; 
+    padding-top: 20px;
+ }
+
+ .modal-footer{  
+     background-color: green;
+     height:40px; 
+     color: white;
+     font-weight: bold;
+     padding-top: 18px;
+ }
+ 

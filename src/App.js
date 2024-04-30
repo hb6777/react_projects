@@ -13,6 +13,8 @@ import Custom_Scroll_Indicator from './Component/CustomScrollIndicator';
 import DynamicTabs from './Component/DynamicTab'
 import resultData from './Component/DynamicTab/data.js'
 import TabParent from './Component/DynamicTab/tabparent.jsx';
+import ModalParent from './Component/CustomModalPopup/modalparent.jsx';
+import GitHubProfileFinder from './Component/GitHubProfileFinder'
 
 function App() { 
 
@@ -31,7 +33,9 @@ function App() {
       {/* <Custom_Scroll_Indicator url={'https://dummyjson.com/products?limit=100'} /> */}
       {/* ****Prgram By Own**** */}
       {/* <DynamicTabs resource={resultData} /> */}
-      <TabParent />      
+      {/* <TabParent />       */}
+      {/* <ModalParent /> */}
+      <GitHubProfileFinder />
 
     </div>
   );

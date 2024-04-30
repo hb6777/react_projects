@@ -1,0 +1,47 @@
+.github-search-btn{
+    margin-left:20px;
+    font-size: 10px;
+    background-color: aqua;
+    width:150px;
+    height:23px;
+    border-radius:15px;
+}
+
+
+
+.card-container{
+    font-size:20px;
+    color: red;
+    font-weight: bold;  
+    border: 1px solid black;
+    border-radius: 25px;
+    width:400px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+.user-card-link{
+    margin-top:30px; 
+}
+
+.user-card-image{ 
+    margin-top:30px; 
+    width: 180px;
+    border:0px solid red;
+    border-top-left-radius: 50% 50%; 
+    border-top-right-radius: 50% 50%; 
+    border-bottom-right-radius: 50% 50%; 
+    border-bottom-left-radius: 50% 50%;
+}
+
+.user-card-follower{
+    margin-top:30px;  
+    margin-bottom:30px;  
+}
+
+
+
+
+
+
