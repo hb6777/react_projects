@@ -10,7 +10,9 @@ import menusData from './Component/TreeView/data.js';
 import QRCode from './Component/QRCode'; 
 import LightDarkMode from './Component/LightDarkMode';
 import Custom_Scroll_Indicator from './Component/CustomScrollIndicator';
-
+import DynamicTabs from './Component/DynamicTab'
+import resultData from './Component/DynamicTab/data.js'
+import TabParent from './Component/DynamicTab/tabparent.jsx';
 
 function App() { 
 
@@ -26,8 +28,11 @@ function App() {
       {/* <TreeView menu={menusData} /> */} 
       {/* <QRCode /> */}
       {/* <LightDarkMode /> */}
-      <Custom_Scroll_Indicator url={'https://dummyjson.com/products?limit=100'} />
-      
+      {/* <Custom_Scroll_Indicator url={'https://dummyjson.com/products?limit=100'} /> */}
+      {/* ****Prgram By Own**** */}
+      {/* <DynamicTabs resource={resultData} /> */}
+      <TabParent />      
+
     </div>
   );
 }
