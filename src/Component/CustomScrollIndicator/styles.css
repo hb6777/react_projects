@@ -1,0 +1,33 @@
+ 
+
+.progress-container{      
+    width: 100%;
+    position:fixed;
+    top: 0;
+    /* align-items: center;  */
+    height:30px;
+    font-size: 20px; 
+    background-color: #025417; 
+    color:white;
+}
+
+.progress-bar{
+    width:0%;
+    height: 10px;
+    background-color: rgb(122, 29, 209);
+}
+
+.data-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;  
+    /* border:1px solid blue; */
+    padding-top: 20px;
+    padding-left:60px;
+    width: 90%; 
+}
+
+.data-container img{
+    width: 45px; 
+    cursor: pointer;
+}

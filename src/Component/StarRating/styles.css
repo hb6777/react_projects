@@ -1,0 +1,15 @@
+
+.star-rating{
+     display: flex;
+     position: relative; 
+     justify-content: center;
+}
+
+
+.active{
+     color: yellow;
+}
+
+.inactive{
+     color: black;
+}

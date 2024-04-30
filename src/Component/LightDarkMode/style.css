@@ -1,0 +1,72 @@
+:root {
+    --background:#fff;
+    --background-btn:#fff;
+    --btn-text-color:#000;
+    --text-color:#000; 
+}
+
+[data-theme="dark"]
+{
+    --background:#000;
+    --background-btn:#000;
+    --btn-text-color:#fff;
+    --text-color:#fff; 
+}
+ 
+.light-dark-container{
+    background-color: var(--background); 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px; 
+}
+
+.content-container p{
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+.content-container button{
+    background-color: var(--background-btn);
+    color: var(--btn-text-color);
+}
+ 
+
+
+/* :root {
+    --background: #fff;
+    --text-primary: #000;
+    --button-bg: #fff;
+    --button-text: #000;
+}
+
+[data-theme='dark'] {
+    --background: #000;
+    --text-primary: #fff;
+    --button-bg: #000;
+    --button-text: #fff;
+}
+
+.mode-container {
+    background-color: var(--background);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+.section-container p {
+color: var(--text-primary);
+background-color: var(--background);
+font-size: 20px;
+
+}
+
+.section-container button {
+    background-color: var(--button-bg);
+    border:1px solid var(--button-bg); 
+    color: var(--button-text);  
+    } */

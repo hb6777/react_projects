@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import Accordian from './Component/Accordian';
+import HexRgb from './Component/HexRgbColor';
+import StarRating from './Component/StarRating';
+import ImageSlider from './Component/Image-Slider';
+import LoadMoreData from './Component/LoadMoreData';
+import TreeView from './Component/TreeView';
+import menusData from './Component/TreeView/data.js';
+import QRCode from './Component/QRCode'; 
+import LightDarkMode from './Component/LightDarkMode';
+import Custom_Scroll_Indicator from './Component/CustomScrollIndicator';
+
+
+function App() { 
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <br /><br />
+      {/* Component: Acordian */}
+      {/* <Accordian /> */}
+      {/* <HexRgb /> */}
+      {/* <StarRating starNum={10} /> */}
+      {/* <ImageSlider url={'https://picsum.photos/v2/list'} page={'1'} limit={'10'} /> */} 
+      {/* <LoadMoreData limit={'8'} skip={'8'} stopat={'24'} /> */}  
+      {/* <TreeView menu={menusData} /> */} 
+      {/* <QRCode /> */}
+      {/* <LightDarkMode /> */}
+      <Custom_Scroll_Indicator url={'https://dummyjson.com/products?limit=100'} />
+      
     </div>
   );
 }
