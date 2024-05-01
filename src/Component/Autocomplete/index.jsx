@@ -18,10 +18,9 @@ export default function Autocomplete() {
             const data = await resp.json();
             
             //console.log(data);
-
             if(data && data.users && data.users.length > 0  )
             { 
-                const firstnameList = data.users.map(item=> item.firstName.toLowerCase())
+                const firstnameList = data.users.map(item=> item.firstName)
 
                 setdatalist(firstnameList);
               //  console.log('first name : ' + firstnameList );
@@ -46,7 +45,7 @@ export default function Autocomplete() {
         if(datalist)
         {
             const filtered =  datalist.filter((name)=> name.length > 1 
-            && name.indexOf(toLowername) > -1) ;
+            && name.toLowerCase().indexOf(toLowername) > -1) ;
 
             setfilteredData( filtered ); 
         } 

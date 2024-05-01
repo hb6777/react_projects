@@ -16,6 +16,7 @@ import TabParent from './Component/DynamicTab/tabparent.jsx';
 import ModalParent from './Component/CustomModalPopup/modalparent.jsx';
 import GitHubProfileFinder from './Component/GitHubProfileFinder'
 import Autocomplete from './Component/Autocomplete'
+import TicTakToe from './Component/TikTakToe/index.jsx';
 
 function App() { 
 
@@ -37,8 +38,13 @@ function App() {
       {/* <TabParent />       */}
       {/* <ModalParent /> */}
       {/* <GitHubProfileFinder /> */}
-      <Autocomplete />
+      {/* <Autocomplete /> */}
+      <TicTakToe />
 
+
+
+
+      
     </div>
   );
 }
