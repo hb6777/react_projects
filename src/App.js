@@ -19,6 +19,7 @@ import Autocomplete from './Component/Autocomplete'
 import TicTakToe from './Component/TikTakToe/index.jsx'; 
 import FeatureGlobalDataContext from './Component/FeatureFlag/context/context.jsx';
 import FeatureFlags from './Component/FeatureFlag/index.jsx';
+import UseFetchHookTest from './Component/UseFetchHook' 
 
 function App() { 
 
@@ -42,12 +43,11 @@ function App() {
       {/* <GitHubProfileFinder /> */}
       {/* <Autocomplete /> */}
       {/* <TicTakToe /> */}
-       <FeatureGlobalDataContext>
+       {/* <FeatureGlobalDataContext>
           <FeatureFlags /> 
-       </FeatureGlobalDataContext>
-
-
-      
+       </FeatureGlobalDataContext> */}
+        <UseFetchHookTest />
+         
     </div>
   );
 }
