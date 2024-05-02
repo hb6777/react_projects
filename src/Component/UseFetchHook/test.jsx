@@ -1,9 +1,8 @@
-import useFetch from "./";
-import "./index"; 
+import useFetch from "./index";
 
-export default function UseFetchHookTest(){
-
-    const {data, error, loading} = useFetch('https://dummyjson.com/products/',{});
+export default function UseFetchHookTest({url}){
+ 
+    const {data, errorMsg, loading} = useFetch(url,{});
 
     return (
         <div>
@@ -12,15 +11,15 @@ export default function UseFetchHookTest(){
                 loading ? <div>Loading ... Please wait.</div> : null
             }
             {
-                error ? <div>Error ! ${error}</div> : null
-            }
-            {
-                data && data.products && data.products.lenght > 0 ?
-                    data.products.map((prodItem)=>{
-                        <p key={prodItem.id}>{prodItem.title}</p>
-                    })
-                : null
+                errorMsg ? <div>Error ! ${errorMsg}</div> : null
             } 
+                {   
+                    data && data.products && data.products.length ?
+                        data.products.map((prodItem) =>(
+                            <p> ${prodItem.title} </p>
+                        )) : null
+                } 
+            
         </div>
     );
 }

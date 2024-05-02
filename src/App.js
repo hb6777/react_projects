@@ -19,7 +19,9 @@ import Autocomplete from './Component/Autocomplete'
 import TicTakToe from './Component/TikTakToe/index.jsx'; 
 import FeatureGlobalDataContext from './Component/FeatureFlag/context/context.jsx';
 import FeatureFlags from './Component/FeatureFlag/index.jsx';
-import UseFetchHookTest from './Component/UseFetchHook' 
+import UseFetchHookTest from './Component/UseFetchHook/test.jsx' 
+import UseClickOutsideToClose from './Component/UseClickOutsideToClose/test.jsx';
+import UseWindowResize from './Component/UseWindowResize/test.jsx'
 
 function App() { 
 
@@ -46,7 +48,10 @@ function App() {
        {/* <FeatureGlobalDataContext>
           <FeatureFlags /> 
        </FeatureGlobalDataContext> */}
-        <UseFetchHookTest />
+        {/* <UseFetchHookTest url={'https://dummyjson.com/products'}/> */}
+         {/* <UseClickOutsideToClose /> */}
+
+         <UseWindowResize />
          
     </div>
   );

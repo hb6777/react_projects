@@ -1,42 +1,35 @@
 import { useEffect, useState } from "react";
 
 
-export default function useFetch( url,options ={} )
-{
-    const [data, setdata] = useState(null);
-    const [error, seterror] = useState(null);
+export default function useFetch(url, options = {}) {
+   // console.log(url);
+
+    const [data, setData] = useState(null);
+    const [errorMsg, seterrorMsg] = useState(null);
     const [loading, setloading] = useState(false);
 
-    async function fetchData(){
-        
-        try{
-            
-            setloading(true)
-            const response = await fetch(url);
-            // if(!response.ok) {
-            //     seterror(response.status)
-            // }
-            const result = await response.json();
-             setdata(result.products)
-            if(result) {
-            console.log(result.products);
-              setloading(false)
-            }
+    async function fetchDataList() {
+        setloading(true)
 
-        }catch(e){
-            seterror(e) 
-            setloading(false) 
+        try {
+            const response = await fetch(url, options);
+            if (!response.ok) throw new Error(response.statusText); 
+            const prodData = await response.json();
+          //  console.log(prodData); 
+            setData(prodData)
+            setloading(false)
+            seterrorMsg(null)
+        } catch (e) {
+            seterrorMsg(`${e}. Error Occured!`)
+            setloading(false)
         }
-
     }
 
-    useEffect(()=>{
-        fetchData()
-    },[url]);
-
-   return { data, error, loading };
-
-     
+    useEffect(() => {
+        fetchDataList()
+    }, [url]);
+  
+    return { data, errorMsg, loading };
 }
 
 
