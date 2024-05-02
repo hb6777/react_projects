@@ -22,6 +22,8 @@ import FeatureFlags from './Component/FeatureFlag/index.jsx';
 import UseFetchHookTest from './Component/UseFetchHook/test.jsx' 
 import UseClickOutsideToClose from './Component/UseClickOutsideToClose/test.jsx';
 import UseWindowResize from './Component/UseWindowResize/test.jsx'
+import ScrollToTopBottom from './Component/ScrollToTopBottom'
+import ScrollToSection from './Component/ScrollToSection'
 
 function App() { 
 
@@ -38,21 +40,28 @@ function App() {
       {/* <QRCode /> */}
       {/* <LightDarkMode /> */}
       {/* <Custom_Scroll_Indicator url={'https://dummyjson.com/products?limit=100'} /> */}
+      
       {/* ****Prgram By Own**** */}
       {/* <DynamicTabs resource={resultData} /> */}
+
       {/* <TabParent />       */}
       {/* <ModalParent /> */}
       {/* <GitHubProfileFinder /> */}
       {/* <Autocomplete /> */}
       {/* <TicTakToe /> */}
+
        {/* <FeatureGlobalDataContext>
           <FeatureFlags /> 
        </FeatureGlobalDataContext> */}
-        {/* <UseFetchHookTest url={'https://dummyjson.com/products'}/> */}
-         {/* <UseClickOutsideToClose /> */}
 
-         <UseWindowResize />
-         
+        {/* <UseFetchHookTest url={'https://dummyjson.com/products'}/> */}
+
+         {/* <UseClickOutsideToClose /> */} 
+
+         {/* <UseWindowResize /> */}
+         {/* <ScrollToTopBottom /> */}
+         <ScrollToSection /> 
+
     </div>
   );
 }
