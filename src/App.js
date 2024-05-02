@@ -16,7 +16,9 @@ import TabParent from './Component/DynamicTab/tabparent.jsx';
 import ModalParent from './Component/CustomModalPopup/modalparent.jsx';
 import GitHubProfileFinder from './Component/GitHubProfileFinder'
 import Autocomplete from './Component/Autocomplete'
-import TicTakToe from './Component/TikTakToe/index.jsx';
+import TicTakToe from './Component/TikTakToe/index.jsx'; 
+import FeatureGlobalDataContext from './Component/FeatureFlag/context/context.jsx';
+import FeatureFlags from './Component/FeatureFlag/index.jsx';
 
 function App() { 
 
@@ -39,9 +41,10 @@ function App() {
       {/* <ModalParent /> */}
       {/* <GitHubProfileFinder /> */}
       {/* <Autocomplete /> */}
-      <TicTakToe />
-
-
+      {/* <TicTakToe /> */}
+       <FeatureGlobalDataContext>
+          <FeatureFlags /> 
+       </FeatureGlobalDataContext>
 
 
       
