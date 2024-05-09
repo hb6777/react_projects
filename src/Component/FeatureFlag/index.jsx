@@ -34,7 +34,4 @@ export default function FeatureFlags(){
                 componentToShow.map(compItem=>(checkComponentToShow(compItem.key) ? <div style={{width:'70%', position:'relative', left:'200px',backgroundColor:'green',marginTop:'70px',marginBottom:'70px'}}>{compItem.component}</div> : null))     
             }
         </div>);
-
 }
-
-

@@ -34,10 +34,7 @@ export default function FeatureGlobalDataContext({children}){
         <FeatureDataContext.Provider value={{loading, enabledFlags}}>
             {children}
         </FeatureDataContext.Provider>
-    );
-
-
-
+    ); 
 }
 
 

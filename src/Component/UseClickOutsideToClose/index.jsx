@@ -22,10 +22,7 @@ export default function useRefHandleToClose(ref, handler){
             document.removeEventListener("touchstart",listener); 
         }
 
-    })
-
-
-
+    }) 
 }
 
 

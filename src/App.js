@@ -24,6 +24,7 @@ import UseClickOutsideToClose from './Component/UseClickOutsideToClose/test.jsx'
 import UseWindowResize from './Component/UseWindowResize/test.jsx'
 import ScrollToTopBottom from './Component/ScrollToTopBottom'
 import ScrollToSection from './Component/ScrollToSection'
+import ToDoList from './Component/ToDoList/index.jsx';
 
 function App() { 
 
@@ -60,7 +61,10 @@ function App() {
 
          {/* <UseWindowResize /> */}
          {/* <ScrollToTopBottom /> */}
-         <ScrollToSection /> 
+         {/* <ScrollToSection />  */}
+
+         <ToDoList />
+
 
     </div>
   );
